@@ -1,7 +1,7 @@
 const mysql=require('mysql');
 var pool=mysql.createPool({
-   host:'127.0.0.1',
-   post:'3306',
+   host:'0.0.0.0',
+   post:'5050',
    user:'root',
    password:'',
    database:'store',

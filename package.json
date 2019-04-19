@@ -1,20 +1,11 @@
 {
   "name": "shop",
+  "description": "getting started with nodejs on sinacloud platform",
   "version": "1.0.0",
   "private": true,
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/webfenghaixin/shop.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/webfenghaixin/shop/issues"
+  "author": {
+    "name": "webfenghaixin",
+    "email": "webfenghaixin@163.com"
   },
   "dependencies": {
     "express": "^4.13.3"

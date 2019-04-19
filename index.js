@@ -24,7 +24,7 @@ server.use(express.static('./public'));
 server.use(express.static('./images'));
 
 server.use(cors({
-    origin:["http://127.0.0.1:8080","http://localhost:8080"],
+    origin:["http://0.0.0.0:5050","https://0.0.0.0:5050"],
     credentials:true
 }));
 //使用系统自带解析post请求
