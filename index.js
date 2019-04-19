@@ -7,7 +7,7 @@ const Router=require('./routes/router.js');
 //创建服务器
 var server=express();
 //监听3000端口
-server.listen(5050);
+server.listen(process.env.PORT || 5050);
 //引入session模块
 const session=require("express-session");
 //配置session
@@ -21,10 +21,10 @@ server.use(session({
 }))
 //托管静态文件到public目录下
 server.use(express.static('./public'));
-server.use(express.static('./images'));
+server.use(express.static('./static'));
 
 server.use(cors({
-    origin:["http://0.0.0.0:5050","https://0.0.0.0:5050"],
+    origin:["http://127.0.0.1:3000","http://localhost:3000"],
     credentials:true
 }));
 //使用系统自带解析post请求
