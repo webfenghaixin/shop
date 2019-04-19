@@ -7,7 +7,7 @@ const Router=require('./routes/router.js');
 //创建服务器
 var server=express();
 //监听3000端口
-server.listen(process.env.PORT || 5050);
+server.listen(5050);
 //引入session模块
 const session=require("express-session");
 //配置session
